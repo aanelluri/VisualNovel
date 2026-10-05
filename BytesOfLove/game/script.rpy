@@ -1,4 +1,7 @@
 # Transitions
+from numpy import repeat
+
+
 define longer_fade = Fade(0.5, 1.0, 0.5)
 define shorter_fade = Fade(0.5, 0.5, 0.5)
 
@@ -80,6 +83,12 @@ image python_nojacket_happy = "Python/Python_Base_2.5.png"
 
 image python_angry_talk = "Python/Python_HandsPocket_Angry.png"
 image python_angry = "Python/Python_HandsPocket_Angry2.png"
+image python_talking:
+    "Python/Python_Base_2.png"
+    0.18
+    "Python/Python_Base_1.png"
+    0.18
+    repeat
 
 default p_rep = 50
 

@@ -191,38 +191,46 @@ label w0_d3_Registration:
     mc"\"I made it to orientation on time and picked some good classes.\""
     mc"\"I am so excited to start college!\""
 
-    show python_normal
+        show python_normal as python
     mc"\"Oh, look. There’s Python\""
 
     menu w0d3_talktopython:
         "Talk to Python":
             mc"\"Hey, Python!\""
 
+            show python_talking as python
             p"\"Oh, hey [mc]!\""
             p"\"How are you doing, did you get the classes you wanted?\""
+            show python_normal as python
 
             mc"\"Yeah, I did!\""
             mc"\"I obviously am taking Introduction to Programming 1,\""
             mc"\"And then I’m also taking Calculus 1.\""
 
+            show python_talking as python
             p"\"Oh, cool.\""
             p"\"I am taking those too.\""
+            show python_normal as python
 
             mc"\"What time is your Calculus 1 class?\""
             mc"\"Maybe we’ll have it together...\""
 
+            show python_talking as python
             p"\"Hmm, let me check...\""
             p"\"Okay, it looks like mine is at 10:40 in Carlington Amphitheater.\""
             p"\"What about you?\""
+            show python_normal as python
 
             mc"\"No way, mine is too!\""
             mc"\"That’s good, at least I’ll know somebody.\""
 
+            show python_happy as python
             p "{i}Smiles warmly{i}"
+            show python_talking as python
             p"\"Yeah I’m excited.\""
             p"\"Anyway I gotta run, I’ll see you in Fall!\""
 
-            hide python_normal with dissolve
+            hide python with dissolve
             mc"\"Sure thing, bye!\""
 
         "Go Home":
